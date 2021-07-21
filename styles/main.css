@@ -1,7 +1,83 @@
+* {
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
 :root {
-  --font-family: font-family: 'Rubik', sans-serif;
-  --menu-text-color:#4a4a4a;
-  --main-text-color: #FFFFFF;
-  --background-color: #3CDBC0;
-  
+  --menu-text-color: #4a4a4a;
+  --main-text-color: #ffffff;
+  --background-color: #3cdbc0;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 155px;
+  margin-top: 10px;
+}
+
+.menu {
+  text-transform: uppercase;
+  font-size: 16px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  color: var(--menu-text-color);
+  margin-bottom: 13px;
+  margin-top: 10px;
+}
+
+.item {
+  padding: 20px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  color: var(--menu-text-color);
+  text-decoration: none;
+}
+
+.linkItem {
+  text-decoration: none;
+}
+
+.linkItem:visited {
+  color: var(--main-menu-color);
+}
+
+.linkItem:hover {
+  color: #33bba4;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+}
+
+h1 {
+  font-family: var(--font-family);
+  color: var(--main-text-color);
+  font-size: 30px;
+  text-transform: capitalize;
+  font-weight: bolder;
+  line-height: 40px;
+}
+
+h2 {
+  font-family: var(--font-family);
+  color: var(--main-text-color);
+  font-size: 30px;
+  text-transform: capitalize;
+  font-weight: bolder;
+  line-height: 40px;
+}
+
+@media screen and (min-width: 768px) {
 }
